@@ -1,29 +1,27 @@
-<div align="center">
-    <h1>Верстка админ панели для переноса ее на React JS</h1>
-</div>
+<h1 align="center">
+    Верстка админ панели для переноса ее на React JS
+</h1>
 
-<br>
+<p align="center">
+  <a href="https://github.com/vaeum/admin-dashboard">
+    <img
+        alt="cover image" src="https://github.com/vaeum/admin-dashboard/raw/master/cover.png" width="250">
+  </a>
+</p>
 
-<div align="center">
+<p align="center">
     <a href="https://travis-ci.org/vaeum/admin-dashboard">
-        <img src="https://travis-ci.org/vaeum/gulp-template.svg?branch=master" alt="">
+        <img
+        src="https://travis-ci.org/vaeum/gulp-template.svg?branch=master"
+        alt="">
     </a>
-
     <a href="http://prose.io/#vaeum/admin-dashboard">
         <img src="https://img.shields.io/badge/edit-prose.io-blue.svg" alt="">
     </a>
-
     <a href="https://github.com/vaeum/admin-dashboard">
         <img src="https://david-dm.org/vaeum/admin-dashboard.svg" alt="">
     </a>
-</div>
-
-<br>
-<br>
-
-<div align="center">
-    <img src="cover.png" alt="cover image">
-</div>
+</p>
 
 ### Road map
 
@@ -47,3 +45,5 @@
 
 - [x] Gulp
 - [x] NPM
+- [x] Jade (template)
+- [x] Sass (css compile)

@@ -1,0 +1,60 @@
+.page-container{
+  position: relative;
+
+  @media (min-width: 769px){
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+}
+
+.page-content{
+  @media (min-width: 769px){
+    display: table-row;
+  }
+}
+
+.sidebar{
+  background-color: #263238;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  display: none;
+
+  @media (min-width: 769px){
+    display: table-cell;
+    vertical-align: top;
+    width: 260px;
+  }
+
+  &.sidebar-main{
+    z-index: 99;
+  }
+}
+
+.sidebar-content{
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.content-wrapper{
+  width: 100%;
+
+  @media (min-width: 769px){
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+.content{
+  padding: 0 20px 60px 20px;
+
+  &:first-child {
+    padding-top: 20px;
+  }
+}
+
+.footer{
+  position: absolute;
+  bottom: 30px;
+}

@@ -34,7 +34,7 @@ html(lang="ru")
     //- Больше информации: https://bitsofco.de/all-about-favicons-and-touch-icons/
 
     //- добавляем normalize.css
-    link(href="https://unpkg.com/normalize.css", rel="stylesheet")
+    //- link(href="https://unpkg.com/normalize.css", rel="stylesheet")
 
     //- подключаем файл со стилями
     link(href="css/style.css", rel="stylesheet")
@@ -50,26 +50,17 @@ html(lang="ru")
     block header_script
 
   body
-    .off-canvas-wrapper
-      .off-canvas-wrapper-inner
-        .off-canvas.position-left
-          include ../components/menu-mobile-left/menu-mobile-left
+    block header
+      include ../components/header/header.jade
 
-        .off-canvas-content
-          .open-menu__button(data-show="left-menu") open left menu
-          .open-menu__button(data-show="right-menu") open right menu
-
-          main
-            include ../components/header/header.jade
-
+    .page-container
+      .page-content
+        include ../components/sidebar/sidebar.jade
+        .content-wrapper
+          .content
             block content
-
-          block footer
-            include ../components/footer/footer.jade
-
-          .js-off-canvas-exit
-        .off-canvas.position-right
-          include ../components/menu-mobile-right/menu-mobile-right
+            block footer
+              include ../components/footer/footer.jade
 
     block modal
 

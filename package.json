@@ -1,5 +1,5 @@
 {
-  "name": "gulp-template",
+  "name": "admin-dashboard",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vaeum/gulp-template.git"
+    "url": "git+https://github.com/vaeum/admin-dashboard.git"
   },
   "keywords": [
     "gulp",
@@ -19,9 +19,9 @@
   "author": "vaeum",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vaeum/gulp-template/issues"
+    "url": "https://github.com/vaeum/admin-dashboard/issues"
   },
-  "homepage": "https://github.com/vaeum/gulp-template#readme",
+  "homepage": "https://github.com/vaeum/admin-dashboard#readme",
   "dependencies": {
     "autoprefixer": "^7.0.0",
     "babel-eslint": "^7.2.3",

@@ -68,7 +68,11 @@ html(lang="ru")
     script(src="http://vaeum.com/cdn/extsrcjs.js")
 
     //- подключаем Jquery JS
-    script(extsrc="js/jquery.min.js")
+    //- подключаем Jquery JS
+    if DEV
+      script(extsrc="js/jquery.min.js")
+    if PROD
+      script(extsrc="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
 
     block script
 

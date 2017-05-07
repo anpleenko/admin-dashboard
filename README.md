@@ -36,12 +36,22 @@
 - [ ] mobile menu
 - [ ] notification menu
 - [ ] pages
-    - [ ] login page
+    - [ ] service pages
+    - [ ] sitemap
+    - [ ] authentication
+        - [ ] simple login
+        - [ ] more login info
+        - [ ] simple registration
+        - [ ] more registration info
+        - [ ] unlock user
+        - [ ] reset password
     - [ ] error pages
-        - [ ] 404
-        - [ ] 503
-        - [ ] 401
         - [ ] 403
+        - [ ] 404
+        - [ ] 405
+        - [ ] 500
+        - [ ] 503
+        - [ ] offline page
 - [ ] components
     - [ ] buttons
     - [ ] buttons

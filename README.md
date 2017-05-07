@@ -23,8 +23,13 @@
     </a>
 </p>
 
+### Style guide
+
+- font-family - [system-font-stack](https://css-tricks.com/snippets/css/system-font-stack/)
+
 ### Road map
 
+- [x] main layout
 - [ ] sidebar menu (3 level)
 - [ ] D3 charts (only)
 - [ ] responsive layout

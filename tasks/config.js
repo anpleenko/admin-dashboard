@@ -29,29 +29,19 @@ export const notify = (title = 'Error running something') =>
 
 export const config = {
   src: {
-    style: './src/style/**/!(_)*.scss',
+    style: './src/style/style.css',
     jade: './src/pages/!(_)*.jade',
     layouts: './src/layouts/*.jade',
     components: './src/components/**/*.jade',
     data: './src/data/**/*.js',
     scripts: './src/scripts/!(_)*.js',
     misc: './src/misc/**',
-    images: [
-      './src/images/**',
-      './src/components/**/*.{jpg,png,svg}',
-    ],
+    images: ['./src/images/**', './src/components/**/*.{jpg,png,svg}'],
   },
 
   watch: {
-    scripts: [
-      './src/scripts/**/*.js',
-      './src/components/**/*.js',
-    ],
-
-    style: [
-      './src/style/**/*.scss',
-      './src/components/**/*.scss',
-    ],
+    scripts: ['./src/scripts/**/*.js', './src/components/**/*.js'],
+    style: ['./src/style/**/*.css', './src/components/**/*.css'],
   },
 
   jsbeautifierConfig: {
@@ -82,16 +72,7 @@ export const config = {
     }),
   ],
 
-  PROCESSORS: [
-    require('autoprefixer')({ browsers: AUTOPREFIXER_CONFIG }),
-    require('css-mqpacker'),
-    require('postcss-discard-comments')({ removeAll: true }),
-    require('postcss-csso'),
-  ],
-
-  PERFECTIONIST: [
-    require('perfectionist')
-  ],
+  PERFECTIONIST: [require('perfectionist')],
 
   babel: {
     comments: false,

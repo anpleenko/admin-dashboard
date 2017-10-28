@@ -5,7 +5,7 @@ node_js:
 
 env:
   global:
-    - GH_REF: github.com/vaeum/admin-dashboard.git
+    - GH_REF: github.com/anpleenko/admin-dashboard.git
     - secure: gtmVpms9ZAILqVaWnY+GHfJZAL3E1Un+4gXVk9Z7GvHaRoukQBXCUneh3dKqpytrK3iSNVSjw0S8f0H5IaeHJrJ0T8vqnYCniyxjHRwoPxYVxlUjJ/NdCXGzf979sPSJC0172P2qnXs76BFMehinwHXyxB02WTXs3xLwncWfb1HzeG5n03uY91c0mCeCpt/6lrIwD69HAFdxLqb7fCmtWDI/A1vWLeR0Hn09gWTd7adJKEtTMS4w307nzKs/g9nfP//qESMujrp24d8D5/eXtIV/lh6QMwDDOdl7YsMm1JTC2o3wDJesmsoUu8btNDqi78nyGvg0xhcK5+VkuKRNIoJZGl01yRMRgR3+Ro0JskNlrqKOmCuvcFVnjPtBox7Fw46uropj7mctn0WLEjaXRlIthLlD3ocx5Dk0aAauAO/CyqDUKrg1eRLzckMTOB0hjTg5WzFrSoYDWEAP5drf25mCHAlPDDs1098Rzgf3xd6zS+HuLIQEdVQAJwpDIiaZYjv9gqT01LXf1HpZazFbz+ixEclv5Em83pnOocQv7I8UGBtthGjIs/8T9Qabn+CP8n+Yk/3oSgYe+XwEsLVAGpgHPVvzo9YdvobzROamN9xcoGKMeCvGTlMGlGX0heitJnXNACy03S4ANBEOPPZg9VRJ1oQuwGo9BoQHEfKRhNM=
 
 before_install:

@@ -1,60 +1,61 @@
-.page-container{
+.page-container {
   position: relative;
 
-  @media (min-width: 769px){
+  @media (min-width: 769px) {
     width: 100%;
     display: table;
     table-layout: fixed;
+
+    // добавим отступов сверху чтобы видеть футер
+    height: 100%;
+    top: -50px;
+    padding-top: 50px;
   }
 }
 
-.page-content{
-  @media (min-width: 769px){
+.page-content {
+  @media (min-width: 769px) {
     display: table-row;
   }
 }
 
-.sidebar{
+.sidebar {
   background-color: #263238;
   color: #fff;
   position: relative;
   width: 100%;
   display: none;
 
-  @media (min-width: 769px){
+  @media (min-width: 769px) {
     display: table-cell;
     vertical-align: top;
     width: 260px;
   }
 
-  &.sidebar-main{
+  &.sidebar-main {
     z-index: 99;
   }
 }
 
-.sidebar-content{
+.sidebar-content {
   position: relative;
   padding-bottom: 8px;
 }
 
-.content-wrapper{
+.content-wrapper {
   width: 100%;
 
-  @media (min-width: 769px){
+  @media (min-width: 769px) {
     display: table-cell;
     vertical-align: top;
   }
 }
 
-.content{
-  padding: 0 20px 60px 20px;
+.content {
+  padding: 0 0px 60px 0px;
+  // padding: 0 20px 60px 20px;
 
   &:first-child {
-    padding-top: 20px;
+    // padding-top: 20px;
   }
-}
-
-.footer{
-  position: absolute;
-  bottom: 30px;
 }

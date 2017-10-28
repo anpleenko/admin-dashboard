@@ -4,6 +4,8 @@ import { config, $, bs, notify, isDev } from './config';
 const reload = bs.reload;
 
 const source = [
+  // './src/style/style.css',
+  config.src.style,
   // './node_modules/normalize.css/normalize.css',
 
   // './node_modules/bootstrap-only-css/lib/alerts.css',
@@ -59,17 +61,16 @@ const source = [
   './node_modules/css.modifiers/lib/text.css',
   './node_modules/css.modifiers/lib/underline.css',
 
-  config.src.style,
+  './src/components/**/*.css',
 ];
 
 gulp.task('style', () =>
-  gulp.src(source)
+  gulp
+    .src(source)
     .pipe($.if(isDev, $.plumber({ errorHandler: notify('Style error') })))
     .pipe($.debug())
     .pipe($.concat('style.css'))
-    .pipe($.sassGlobImport())
-    .pipe($.sass())
-    .pipe($.postcss(config.PROCESSORS))
+    .pipe($.postcss())
     .pipe($.if(isDev, $.postcss(config.PERFECTIONIST)))
     .pipe(gulp.dest(config.dest.style))
     .pipe(reload({ stream: true }))

@@ -14,3 +14,7 @@ gulp.task('watch', cb => {
 
   cb();
 });
+
+gulp.task('build', gulp.series('delete_dist', 'jade', 'style', 'images', 'misc', 'libs'));
+
+gulp.task('default', gulp.series('watch', 'server'));

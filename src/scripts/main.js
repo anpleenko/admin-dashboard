@@ -1,5 +1,5 @@
-//= include _variables.js
+import { istouch } from './main/variables';
 
 $(() => {
-  //= include ../components/**/*.js
+  console.log(istouch);
 });

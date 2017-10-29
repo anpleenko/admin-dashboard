@@ -34,7 +34,7 @@ export const config = {
     layouts: './src/layouts/*.jade',
     components: './src/components/**/*.jade',
     data: './src/data/**/*.js',
-    scripts: './src/scripts/!(_)*.js',
+    scripts: ['./src/scripts/main.js', './src/scripts/header.js'],
     misc: './src/misc/**',
     images: ['./src/images/**', './src/components/**/*.{jpg,png,svg}'],
   },
@@ -73,9 +73,4 @@ export const config = {
   ],
 
   PERFECTIONIST: [require('perfectionist')],
-
-  babel: {
-    comments: false,
-    presets: ['es2015'],
-  },
 };

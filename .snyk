@@ -1,0 +1,16 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - browser-sync > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2018-12-05T10:33:16.510Z'
+  'npm:hoek:20180212':
+    - gulp > gulp-cli > wreck > hoek:
+        patched: '2018-12-05T10:33:16.510Z'
+    - gulp > gulp-cli > wreck > boom > hoek:
+        patched: '2018-12-05T10:33:16.510Z'
+  'npm:ms:20170412':
+    - browser-sync > socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2018-12-05T10:33:16.510Z'

@@ -1,0 +1,1 @@
+!function(){"use strict";var t="ontouchstart"in window?"touchstart":"click";$(function(){console.log(t)})}();
